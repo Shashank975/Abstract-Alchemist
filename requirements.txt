@@ -18,4 +18,5 @@ fastapi
 uvicorn
 jinja2
 nltk
+
 -e . 

@@ -1,22 +1,21 @@
 import setuptools
 
-with open("README.md", "r" , encoding="utf-8") as f:
+with open("README.md", "r", encoding="utf-8") as f:
     long_description = f.read()
 
-
-__version__ = '0.0.0'
+__version__ = "0.0.0"
 
 REPO_NAME = "Abstract-Alchemist"
 AUTHOR_USER_NAME = "Shashank975"
-SRC_REPO = "Abstract-Alchemist"
-AUTHOR_USER_NAME = "shashanksaad07@gmail.com"
-
+SRC_REPO = "AbstractAlchemist"  # Updated to use underscores
+AUTHOR_EMAIL = "shashanksaad07@gmail.com"  # Separate email variable
 
 setuptools.setup(
     name=SRC_REPO,
     version=__version__,
     author=AUTHOR_USER_NAME,
-    description="A small python packapge for NLP app",
+    author_email=AUTHOR_EMAIL,
+    description="A small python package for NLP app",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url=f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}",
